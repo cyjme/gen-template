@@ -8,7 +8,7 @@ import (
 	"{{projectName}}/pkg/util"
 )
 type Common struct {
-	Id        string     `gorm:"primary_key" json:"id"`
+	Id        string     `gorm:"size:30;primary_key" json:"id"`
 	CreatedAt time.Time  `json:"createdAt"`
 	UpdatedAt time.Time  `json:"updatedAt"`
 	DeletedAt *time.Time `sql:"index" json:"deletedAt"`
